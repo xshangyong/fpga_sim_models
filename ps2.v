@@ -2,11 +2,12 @@
 //  2015-06-14 by Segment
 //  PS2.v  
 //  PS2 接口模块
-//		输入:ps2_clk_i ps2_data_i为PS2的时钟和数据
-//  	输出:  ps2_data_o为输出码子   ps2_break_o表示断码或者通码  ps2_done_o表示数据有效
+//	输入:	ps2_clk_i ps2_data_i为PS2的时钟和数据
+//  	输出:  	ps2_data_o为输出码子   
+//		ps2_break_o表示断码或者通码  ps2_done_o表示数据有效
 //		输出信号有效期只有一个clk_i周期， 01为断码   10为通码
 //		2015.6.14 注:调试通过，仅协议正确时有效，无防错处理。错误协议可能导致无法正常工作
-
+//		2015.7.23  commit to github
 
 module ps2(clk_i,rst_i,ps2_clk_i,ps2_data_i,ps2_data_o,ps2_break_o,ps2_done_o);
 	input			    clk_i;
