@@ -1,4 +1,1 @@
-# fpga_sim_models
-rtl models for fpga simulation 
-
-#new branch named readme-edits
+Here are some RTL modules for FPGA simulation.
